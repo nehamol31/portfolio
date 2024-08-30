@@ -1,0 +1,167 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+   .section__pic-container {
+    width: 300px; /* Wider for oval shape */
+    height: 400px; /* Taller for oval shape */
+    margin: 0 auto 2rem;
+    justify-content: flex-start; /* Align to the left */
+  }
+  .sections__pic-container {
+    width: 300px; /* Wider for oval shape */
+    height: 400px; /* Taller for oval shape */
+    margin: 0 auto 2rem;
+    justify-content: flex-start; /* Align to the left */
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .sections__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: flex-start; /* Align to the left */
+  }
+  .sections__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: flex-start; /* Align to the left */
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ovalPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.sections__pic-container {
+  animation: slideInFromLeft 1s ease-out forwards,
+             ovalPulse 2s infinite alternate ease-in-out;
+}
+.section__pic-container {
+  animation: slideInFromLeft 1s ease-out forwards,
+             ovalPulse 2s infinite alternate ease-in-out;
+}
+
+/* Add responsive designs */
+@media screen and (max-width: 1200px) {
+  .sections__pic-container {
+    width: 300px; /* Oval shape */
+    height: 400px; /* Oval shape */
+    margin: 0 auto 2rem;
+    justify-content: flex-start; /* Align to the left */
+    animation: slideInFromLeft 1s ease-out forwards,
+               ovalPulse 2s infinite alternate ease-in-out;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: flex-start; /* Align to the left */
+    animation: slideInFromLeft 1s ease-out forwards,
+               ovalPulse 2s infinite alternate ease-in-out;
+  }
+}
